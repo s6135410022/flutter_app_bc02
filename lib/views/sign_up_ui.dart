@@ -91,32 +91,106 @@ class _SignUpUIState extends State<SignUpUI> {
               SizedBox(
                 height: 20.0,
               ),
-              Row(
-                children: [
-                  Container(
-                    padding:  EdgeInsets.all(
-                      MediaQuery.of(context).size.width,
-                    ),
-                    decoration: BoxDecoration(
-                      border: Border.all(
-                        width: 4.0,
-                        color: Colors.white,
+              Padding(
+                padding: const EdgeInsets.only(
+                  left: 40.0,
+                ),
+                child: Row(
+                  children: [
+                    Container(
+                      padding: EdgeInsets.all(
+                        30.0,
                       ),
-                      borderRadius: BorderRadius.circular(
-                        50.0,
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          width: 4.0,
+                          color: Colors.white,
+                        ),
+                        borderRadius: BorderRadius.circular(
+                          50.0,
+                        ),
+                      ),
+                      child: Icon(
+                        FontAwesomeIcons.ankh,
+                        color: Colors.grey[400],
+                        size: 30.0,
                       ),
                     ),
-                    child: Icon(
-                      FontAwesomeIcons.ankh,
-                      color: Colors.grey[400],
-                      size: 30.0,
+                    SizedBox(
+                      width: 20,
                     ),
-                  ),
-                  Text(''),
-                ],
+                    Text(
+                      'Upload a profile picture\n(upload)',
+                      style: TextStyle(
+                        color: Colors.grey[400],
+                      ),
+                    ),
+                  ],
+                ),
               ),
               SizedBox(
                 height: 20.0,
+              ),
+              SizedBox(
+                height: 80.0,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(
+                  left: 40.0,
+                  right: 40.0,
+                ),
+                child: TextField(
+                  style: TextStyle(
+                    color: Color(0xFFE38D00),
+                  ),
+                  decoration: InputDecoration(
+                    labelText: 'NAME',
+                    labelStyle: TextStyle(
+                      color: Colors.white,
+                    ),
+                    enabledBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Colors.grey,
+                      ),
+                    ),
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Color(0xFFE38D00),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 20.0,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(
+                  left: 40.0,
+                  top: 20.0,
+                  right: 40.0,
+                ),
+                child: TextField(
+                  style: TextStyle(
+                    color: Color(0xFFE38D00),
+                  ),
+                  decoration: InputDecoration(
+                    labelText: 'USER',
+                    labelStyle: TextStyle(
+                      color: Colors.white,
+                    ),
+                    enabledBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Colors.grey,
+                      ),
+                    ),
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Color(0xFFE38D00),
+                      ),
+                    ),
+                  ),
+                ),
               ),
               Text(
                 'Usename alredy in use',
